@@ -10,20 +10,23 @@
     background-color: rgb(247, 7, 7);
     height: 100vh;
     width: 100%;
-    display:flex;
+    position: relative;
+    /* display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 /* login-form */
 .login-form{
     background-color:white;
-    height: 60%;
+   position: absolute;
+   top:25%;
+   left:35%;
+    height:40%;
     width: 30%;
     padding: 3%;
     display:flex;
     flex-direction: column;
-    
     align-items: center;
     
 }
@@ -31,4 +34,73 @@
 /* social google buttion Socail-logins */
 .Socail-logins{
     margin-top:20%;
+}
+
+/* DASHBOARD */
+.dashboard{
+    
+    background-image: linear-gradient(#f7d5f0,rgb(201, 167, 255));
+    width:100%;
+    
+    display: grid;
+    gap: 50px;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+    padding:20px;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+.profile-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:8%;
+    background-color:rgb(255, 255, 255);
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end:5;
+}
+.weather{
+    background-color: rgb(255, 255, 255);
+    
+
+}
+.facebook{
+    background-color:rgb(255, 255, 255);
+    grid-row-start: 2;
+    grid-row-end:5;
+}
+.currency{
+    background-color:rgb(255, 255, 255);
+    grid-row-start: 3;
+    grid-row-end:5;
+}
+.trending{
+    background-color:rgb(255, 255, 255);
+    grid-column-start: 2;
+    grid-column-end:4;
+}
+footer{
+    background-color:rgb(255, 255, 255);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height:100px;
+}
+.tiles{
+    border:10px solid #f4d9f1;
+    border-radius: 40px;
+    box-shadow: 1px 1px 14px 0px #d9b0d485;
+
+    
+}
+
+/* avtar component css */
+.avtar{
+    border-radius: 50%;
+    background-color: #6d1515;
+    height: 200px;
+    width: 200px;
 }
